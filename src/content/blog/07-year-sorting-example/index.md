@@ -1,7 +1,6 @@
 ---
-title: "Year sorting example"
-description: "Nano groups posts by year."
-date: "12/31/2023"
+title: "Template article"
+description: "Not published."
+date: "2024-01-01"
+draft: true
 ---
-
-This post is to demonstrate the year sorting capabilities.

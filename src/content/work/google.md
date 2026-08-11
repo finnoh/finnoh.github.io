@@ -1,8 +1,8 @@
 ---
-company: "Google"
-role: "Staff Software Engineer"
-dateStart: "11/27/2022"
-dateEnd: "Current"
+company: "Erasmus School of Economics"
+role: "PhD Candidate, Quantitative Marketing"
+dateStart: "2024-01-01"
+dateEnd: "Present"
 ---
 
-Sit amet consectetur adipisicing elit. Iure illo neque tempora, voluptatem est quaerat voluptas praesentium ipsa dolorem dignissimos nulla ratione distinctio quae maiores eligendi nostrum? Quibusdam, debitis voluptatum, lorem ipsum dolor.
+Research on generative embeddings, multi-agent ideation, and Bayesian integration of human and synthetic data.
