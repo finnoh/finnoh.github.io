@@ -35,7 +35,7 @@ const researchPipeline = (await getCollection("blog"))
         <ul class="space-y-3">
           {researchPipeline.map(paper => (
             <li>
-              <Link href={`/blog/${paper.slug}`}>{paper.data.title}</Link>
+              <Link href={`/blog/${paper.id}`}>{paper.data.title}</Link>
               <div class="text-sm opacity-75">{paper.data.description}</div>
             </li>
           ))}

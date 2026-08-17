@@ -1,0 +1,41 @@
+---
+import Link from "@components/Link.astro";
+import { SITE, SOCIALS } from "@consts";
+
+interface Props {
+  class?: string;
+}
+
+const { class: className } = Astro.props;
+---
+
+<ul class={className}>
+  <li>
+    <Link href={SITE.CV} external aria-label={`Open ${SITE.NAME}'s CV in a new tab`} title="Open CV in a new tab" class="flex items-center gap-1">
+      <span>CV</span>
+      <svg aria-hidden="true" class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+        <path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9l-6-6Z" />
+        <path d="M14 3v6h6M12 15l5-5m0 0h-4m4 0v4" />
+      </svg>
+    </Link>
+  </li>
+  <li>
+    <Link href={`mailto:${SITE.EMAIL}`} aria-label={`Email ${SITE.NAME}`} title="Email">
+      <svg aria-hidden="true" class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+        <rect x="3" y="5" width="18" height="14" rx="2" />
+        <path d="m3 7 9 6 9-6" />
+      </svg>
+      <span class="sr-only">Email</span>
+    </Link>
+  </li>
+  {SOCIALS.map(social => (
+    <li>
+      <Link href={social.HREF} external aria-label={`${SITE.NAME} on ${social.NAME}`} title={social.NAME}>
+        <svg aria-hidden="true" class="size-5" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.33V8.98h3.41v1.57h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.29ZM5.31 7.41a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12Zm1.78 13.04H3.52V8.98h3.57v11.47Z" />
+        </svg>
+        <span class="sr-only">{social.NAME}</span>
+      </Link>
+    </li>
+  ))}
+</ul>

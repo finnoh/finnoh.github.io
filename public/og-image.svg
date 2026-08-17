@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">Finn-Ole Höner</title>
+  <desc id="description">PhD Researcher in Quantitative Marketing</desc>
+  <rect width="1200" height="630" fill="#f8f7f4"/>
+  <rect x="72" y="72" width="10" height="486" fill="#111827"/>
+  <text x="128" y="270" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="72" font-weight="600">Finn-Ole Höner</text>
+  <text x="128" y="350" fill="#4b5563" font-family="Inter, Arial, sans-serif" font-size="36">PhD Researcher in Quantitative Marketing</text>
+  <text x="128" y="414" fill="#4b5563" font-family="Inter, Arial, sans-serif" font-size="28">Generative AI · Market Research</text>
+</svg>
