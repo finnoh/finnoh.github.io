@@ -5,4 +5,4 @@ dateStart: "2024-01-01"
 dateEnd: "Present"
 ---
 
-Research on generative embeddings, multi-agent ideation, and Bayesian integration of human and synthetic data.
+Synthetic respondents: psychometric diagnostics for validity and reliability; generative embeddings for controllable text refinement and validation; and multi-agent AI systems for strategic ideation.

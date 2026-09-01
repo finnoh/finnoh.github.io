@@ -5,4 +5,4 @@ dateStart: "2023-01-01"
 dateEnd: "Present"
 ---
 
-Instructor for AI Agents in Economics and Business Research, Natural Language Processing, and Machine Learning 2.
+Instructor for Natural Language Processing and Machine Learning 2, and the Skills Workshop: Research Idea Generation “AI”.

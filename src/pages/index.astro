@@ -4,7 +4,7 @@ import Container from "@components/Container.astro";
 import PageLayout from "@layouts/PageLayout.astro";
 import ContactLinks from "@components/ContactLinks.astro";
 import Link from "@components/Link.astro";
-import { GRANTS, HOME, TALKS } from "@consts";
+import { HOME, TALKS } from "@consts";
 
 const researchPipeline = (await getCollection("blog"))
   .filter(post => !post.data.draft)
@@ -16,14 +16,14 @@ const researchPipeline = (await getCollection("blog"))
     <section class="space-y-16">
       <div>
         <h1 class="animate text-[21px] font-semibold text-black dark:text-white">Finn-Ole Höner</h1>
-        <p class="animate mt-2 text-sm">PhD Researcher in Quantitative Marketing</p>
-        <p class="animate text-sm">Erasmus School of Economics · Rotterdam, Netherlands</p>
+        <p class="animate mt-2 text-sm">PhD Candidate in Quantitative Marketing</p>
+        <p class="animate text-sm">Erasmus School of Economics · Amsterdam/Rotterdam, Netherlands</p>
         <ContactLinks class="animate mt-3 flex flex-wrap gap-x-3" />
       </div>
       <article class="space-y-4">
-        <p class="animate">I develop LLM-based methods for market research, with a focus on generative embeddings, synthetic data, and multi-agent systems.</p>
+        <p class="animate">I develop generative AI methods for market research and innovation management, with a focus on synthetic respondents, generative embeddings, and multi-agent systems.</p>
         <p class="animate">My technical work spans transformer models, fine-tuning, and GPU-based training with PyTorch, CUDA, and SLURM.</p>
-        <p class="animate">I hold a Research Master in Business Data Science from Tinbergen Institute and an M.Sc. in Data Science in Business and Economics from the University of Tübingen.</p>
+        <p class="animate">I am pursuing a PhD in Quantitative Marketing at Erasmus School of Economics and hold a Research Master in Business Data Science from Tinbergen Institute and an M.Sc. in Data Science in Business and Economics from the University of Tübingen.</p>
       </article>
     </section>
     <div class="mt-16 space-y-16">
@@ -47,19 +47,31 @@ const researchPipeline = (await getCollection("blog"))
           <Link href="/teaching">View teaching</Link>
         </div>
         <ul class="space-y-3">
-          <li><div>Erasmus School of Economics</div><div class="text-sm opacity-75">Teaching Assistant / Supervisor · 2024–Present · Text Analytics and thesis supervision.</div></li>
-          <li><div>Tinbergen Institute</div><div class="text-sm opacity-75">Instructor · 2023–Present · AI Agents in Economics and Business Research, NLP, and Machine Learning 2.</div></li>
+          <li><div>Erasmus School of Economics</div><div class="text-sm opacity-75">Teaching Assistant, Supervisor, and Instructor · Text Analytics, thesis supervision, and UNICEF case study.</div></li>
+          <li><div>Tinbergen Institute</div><div class="text-sm opacity-75">Instructor · Natural Language Processing, Machine Learning 2, research idea generation, and AI agents.</div></li>
+        </ul>
+      </section>
+      <section class="animate space-y-4">
+        <h2 class="font-semibold text-black dark:text-white">Education</h2>
+        <ul class="space-y-3">
+          <li>Research Master in Business Data Science, cum laude · Tinbergen Institute · 2024</li>
+          <li>M.Sc. Data Science in Business and Economics, cum laude · University of Tübingen · 2022</li>
+          <li>B.Sc. in Economics &amp; Business Administration, cum laude · University of Tübingen · 2019</li>
         </ul>
       </section>
       <section class="animate space-y-4">
         <div class="flex flex-wrap gap-y-2 items-center justify-between">
-          <h2 class="font-semibold text-black dark:text-white">Activities</h2>
-          <Link href="/activities">View activities</Link>
+          <h2 class="font-semibold text-black dark:text-white">Conference presentations</h2>
+          <Link href="/projects">View all conference presentations</Link>
         </div>
         <ul class="space-y-3">
           <li><div>{TALKS[0].TITLE}</div><div class="text-sm opacity-75">{TALKS[0].DESCRIPTION}</div></li>
-          <li><div>{GRANTS[0].TITLE}</div><div class="text-sm opacity-75">{GRANTS[0].DESCRIPTION}</div></li>
+          <li><div>{TALKS[1].TITLE}</div><div class="text-sm opacity-75">{TALKS[1].DESCRIPTION}</div></li>
         </ul>
+      </section>
+      <section class="animate space-y-4">
+        <h2 class="font-semibold text-black dark:text-white">Skills</h2>
+        <p>Python &amp; R (excellent); Julia, Stan &amp; MATLAB (good); Node.js, HTML, CSS &amp; Rust (basic) · PyTorch, Transformers, OpenRouter, LangChain, CUDA, SLURM, GitHub, Spark, SQL, Pi-agent</p>
       </section>
     </div>
   </Container>
