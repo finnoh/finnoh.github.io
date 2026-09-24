@@ -9,10 +9,11 @@ interface Props {
 const { class: className } = Astro.props;
 ---
 
-<ul class={className}>
-  <li>
-    <Link href={SITE.CV} external aria-label={`Open ${SITE.NAME}'s CV in a new tab`} title="Open CV in a new tab" class="flex items-center gap-1">
-      <span>CV</span>
+<div class={className}>
+  <ul class="flex flex-wrap items-center gap-x-3">
+    <li>
+      <Link href={SITE.CV} external aria-label={`Open ${SITE.NAME}'s CV in a new tab`} title="Open CV in a new tab" underline={false} class="flex items-center gap-1 rounded-md bg-black/[0.06] px-2 py-1 font-medium text-black hover:bg-black/[0.1] dark:bg-white/[0.12] dark:text-white dark:hover:bg-white/[0.2]">
+        <span>Cover Letter</span>
       <svg aria-hidden="true" class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
         <path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9l-6-6Z" />
         <path d="M14 3v6h6M12 15l5-5m0 0h-4m4 0v4" />
@@ -38,4 +39,10 @@ const { class: className } = Astro.props;
       </Link>
     </li>
   ))}
-</ul>
+  </ul>
+  <p class="mt-3 text-sm">
+    PhD Supervisors:
+    <Link href="https://www.eur.nl/en/people/bas-donkers" external>Bas Donkers</Link>,
+    <Link href="https://www.eur.nl/people/martijn-de-jong" external>Martijn de Jong</Link>
+  </p>
+</div>
