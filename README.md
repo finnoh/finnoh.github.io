@@ -13,6 +13,7 @@ The static Astro site publishes research, teaching, conference activities, grant
 - `src/pages/activities/`: conference presentations and grants
 - `context/cv.pdf`: canonical CV source
 - `public/finn-ole-honer-cv.pdf`: downloadable CV published by the site
+- `src/assets/finn-ole-hoener.webp`: homepage portrait, optimized from `_DSC5117.tif` (900 px wide, WebP quality 82) and further processed by Astro during the build.
 
 ## Commands
 

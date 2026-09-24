@@ -1,4 +1,6 @@
 ---
+import { Image } from "astro:assets";
+import portrait from "../assets/finn-ole-hoener.webp";
 import { getCollection } from "astro:content";
 import Container from "@components/Container.astro";
 import PageLayout from "@layouts/PageLayout.astro";
@@ -14,11 +16,16 @@ const researchPipeline = (await getCollection("blog"))
 <PageLayout title={HOME.TITLE} description={HOME.DESCRIPTION}>
   <Container>
     <section class="space-y-16">
-      <div>
-        <h1 class="animate text-[21px] font-semibold text-black dark:text-white">Finn-Ole Höner</h1>
-        <p class="animate mt-2 text-sm">PhD Candidate in Quantitative Marketing</p>
-        <p class="animate text-sm">Erasmus School of Economics · Amsterdam/Rotterdam, Netherlands</p>
-        <ContactLinks class="animate mt-3" />
+      <div class="grid gap-6 sm:grid-cols-[minmax(0,2fr)_minmax(0,1fr)] sm:items-stretch">
+        <div class="flex flex-col">
+          <h1 class="animate text-[21px] font-semibold text-black dark:text-white">Finn-Ole Höner</h1>
+          <p class="animate mt-2 text-sm">PhD Candidate in Quantitative Marketing</p>
+          <p class="animate text-sm">Erasmus School of Economics · Amsterdam/Rotterdam, Netherlands</p>
+          <ContactLinks class="animate mt-auto pt-3" />
+        </div>
+        <div class="relative min-h-52 overflow-hidden rounded-lg sm:min-h-0">
+          <Image src={portrait} alt="Finn-Ole Höner" class="absolute inset-0 h-full w-full object-cover" loading="eager" fetchpriority="high" />
+        </div>
       </div>
       <article class="space-y-4">
         <p class="animate">I develop generative AI methods for market research and innovation management, with a focus on synthetic respondents, generative embeddings, and multi-agent systems.</p>
