@@ -41,7 +41,7 @@ export const TALKS = [
   },
   {
     TITLE: "Text-Generating Embeddings for Marketing Text Refinement and Validation",
-    DESCRIPTION: "Contributed Session and Doctoral Consortium · Marketing Science Conference · Lisbon, Portugal · 2026.",
+    DESCRIPTION: "Contributed Session · Marketing Science Conference · Lisbon, Portugal · 2026.",
   },
 ];
 
