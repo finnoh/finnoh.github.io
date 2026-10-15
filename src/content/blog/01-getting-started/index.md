@@ -2,6 +2,7 @@
 slug: "01-project"
 title: "Text-Generating Embeddings for Marketing Text Refinement and Validation"
 description: "Working paper with Bas Donkers and Dennis Fok."
+coauthors: ["Bas Donkers", "Dennis Fok"]
 date: "2026-06-01"
 ---
 

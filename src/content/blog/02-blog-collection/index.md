@@ -2,6 +2,7 @@
 slug: "02-project"
 title: "Using LLMs to Measure Sensitive Topics: Synthetic Respondents, Real Challenges"
 description: "Working paper with Martijn de Jong and Rik Pieters."
+coauthors: ["Martijn de Jong", "Rik Pieters"]
 date: "2026-01-02"
 ---
 
