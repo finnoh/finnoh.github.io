@@ -1,5 +1,5 @@
 ---
-title: "Generative Embeddings for Marketing Text Refinement and Validation"
+title: "Text-Generating Embeddings for Marketing Text Refinement and Validation"
 description: "Marketing Science Doctoral Consortium · Lisbon, Portugal · 2026."
 date: "2026-06-01"
 ---

@@ -40,7 +40,7 @@ export const TALKS = [
     DESCRIPTION: "Special Session · Marketing Science Conference · Washington, D.C., USA · 2025.",
   },
   {
-    TITLE: "Generative Embeddings for Marketing Text Refinement and Validation",
+    TITLE: "Text-Generating Embeddings for Marketing Text Refinement and Validation",
     DESCRIPTION: "Contributed Session and Doctoral Consortium · Marketing Science Conference · Lisbon, Portugal · 2026.",
   },
 ];
